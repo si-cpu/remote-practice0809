@@ -52,7 +52,7 @@ public class ConditionalOperator {
         */
 		int quiz = (int)(Math.random()*354 +42);
 		System.out.println("발생한 난수 =" + quiz);
-		String quizResult = (quiz= quiz / 2 % 0)? "quiz는 짝수이다,." : "quiz는 홀수이다.";
+		String quizResult = quiz =% 2? "quiz는 짝수이다,." : "quiz는 홀수이다.";
 		System.out.println("quizResult = " + quizResult);
 	}
 
