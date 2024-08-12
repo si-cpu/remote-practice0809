@@ -15,17 +15,39 @@ public class LoopNesting {
 		  내부 반복문은 외부 반복문의 제어변수의 크기 및 범위까지
 		  계속해서 반복 실행되게 됩니다.
 		 */
-		
-		for(int dan=2; dan<=9; dan++) {
-			System.out.println("*** 구구단 " + dan + "단 ***");
-			System.out.println("=======================");
-			for(int hang=1; hang<=9; hang++) {
-				System.out.printf("%d x %d = %d\n", dan, hang, dan*hang);
+
+		for (int level = 2; level <= 9; level++){
+			System.out.println("***구구단 " + level + "단 ***");
+			for (int i=1; i<=9; i++){
+				System.out.printf("%d x %d = %d\n", level,i,level*i);
 			}
-			System.out.println("-----------------------");
-			
+			System.out.println("------------------------------------------------------------------");
 		}
-		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		
 		
