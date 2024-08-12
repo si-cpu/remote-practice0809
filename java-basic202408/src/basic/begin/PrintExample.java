@@ -5,8 +5,8 @@ public class PrintExample {
 	public static void main(String[] args) {
 		
 		// 자바의 표준 출력 형식은 크게 3가지 입니다.
-		// 1. 개행을 포함하지 않는 print()
-		// 2. 개행을 자동으로 포함해 주는 println()
+		// 1. 개행(워드에서 enter키 입력)을 포함하지 않는 print()
+		// 2. 개행(워드에서 enter키 입력)을 자동으로 포함해 주는 println()
 		
 		System.out.print("안녕하세요~!\n\n");
 		System.out.println("Hello~!\n");
@@ -22,7 +22,7 @@ public class PrintExample {
 		 %d: 부호가 있는 정수 데이터 (decimal)
 		 %f: 실수 데이터 (floation point)
 		 %s: 문자열 (String)
-		 
+
 		 # 탈출 코드 (escape code) -> printf에만 동작하는 게 아니에요.
 		 - 반드시 따옴표 내에 위치해야 합니다
 		 - 문자열 내에서 특정 명령을 내리고 싶을 때 사용하는 특수 기호입니다.
@@ -42,10 +42,8 @@ public class PrintExample {
 		//%.[자리수를 지정하는 숫자]f -> 원하는 자리수까지 표현.
 		//%라는 문자 자체를 표현할 때는 %% 쓰시면 됩니다.
 		double rate = 64.126;
-		System.out.printf("합격률: %.2f%%입니다.\n", rate);
-		
-		
-		 
+		System.out.printf("합격율: %.2f%%입니다.\n", rate);
+		 // %.nf 여기서 n에 1~6까지 수를 선택해서 실행하면 소수점 n번째 자리수까지 표현한다.
 		String s = "그는 나에게 '도와줘!' 라고 말했다.";
 
 	}
