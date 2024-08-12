@@ -6,7 +6,7 @@ public class PrintExample {
 		
 		// 자바의 표준 출력 형식은 크게 3가지 입니다.
 		// 1. 개행을 포함하지 않는 print()
-		// 2. 자동으로 개행을 포함해 주는 println()
+		// 2. 개행을 자동으로 포함해 주는 println()
 		
 		System.out.print("안녕하세요~!\n\n");
 		System.out.println("Hello~!\n");
