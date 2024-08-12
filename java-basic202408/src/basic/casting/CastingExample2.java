@@ -15,17 +15,18 @@ public class CastingExample2 {
 		 */
 		
 		int i = 72;
-		char c = (char) i;
+		char c = (char) i; // alt+enter 단축키를 이용하여 인텔리제이의 제안을 볼수있다.
 		System.out.println("72의 문자값: " + c);
-		
+
 		double d = 4.98765;
 		int j = (int) d;
+
 		System.out.println("여러분들의 이번 달 월급: " + j*1000000);
 		
 		
 		int k = 1000;
 		byte b = (byte) k;
-		System.out.println(b);
+		System.out.println("b = " + b);
 		
 		
 		

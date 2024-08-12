@@ -24,10 +24,6 @@ public class TextualExample {
 		
 		//자바에서는 문자열의 덧셈 연산을 지원합니다.
 		// 문자열과 다른 데이터 타입 간의 덧셈 연산 -> 결과값이 무조건 문자열 덧셈연산과 같다.
-		int month =10;
-		int day = 13;
-
-		System.out.println("내생일" + month + "월" + day + "일 입니다." );
 		//연산 결과로는 문자열을 연결해서 결합한 결과가 도출됩니다.
 		System.out.println(s1 + s2);
 		

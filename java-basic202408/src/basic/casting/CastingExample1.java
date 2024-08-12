@@ -9,18 +9,19 @@ public class CastingExample1 {
 		  자바 가상 머신 (JVM)이 자동으로 타입을 올려서 변환해 줍니다.
 		  (promotion, UpCasting)
 		 */
-		
-		byte b = 10;
-		int i = b; // byte -> int로 변환된 후 대입 연산 진행.
-		System.out.println(i);
-		
-		char c = '홓';
-		int j = c;
-		System.out.println("'홓'의 문자 번호: " + j);
-		
+
+		byte b = 10 ;
+		int i = b; //byte -> int로 변환한 후 대입 연산 진행
+		System.out.println("i=" +i);
+
+		char c ='가';
+		int j = c ;//char -> int
+		System.out.println("'가'의 문자변호 :" +j);
+
 		int k = 500;
-		double d = k;
-		System.out.println(d);
+		double d = k; //int -> double
+		System.out.println("d="+d);
+
 		
 
 	}
