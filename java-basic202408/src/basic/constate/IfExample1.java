@@ -14,9 +14,11 @@ public class IfExample1 {
 		System.out.println("------------------------");
 		
 		if(point >= 70) {
+			// if 조건식이 참인 경우에만 실행
 			System.out.println("70점 이상입니다.");
 			System.out.println("합격하셨습니다!");
 		} else {
+			// if 조건식의 결과가 거짓인 경우 실행
 			System.out.println("70점 미만입니다.");
 			System.out.println("불합격하셨습니다 ㅜㅜ");
 		}
