@@ -1,5 +1,6 @@
 package basic.constate;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class IfExample3 {
@@ -19,33 +20,26 @@ public class IfExample3 {
 		  지엽적으로 사용할 변수는 그 블록 범위 내에서만 사용하고
 		  소멸시키는 것이 좋습니다.
 		 */
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("키를 입력하세요(cm): ");
-		int height = sc.nextInt();
-		
-		if(height >= 140) {
-			System.out.print("나이를 입력하세요: ");
-			int age = sc.nextInt();
-			if(age >= 8) {
-				System.out.println("놀이기구 탑승이 가능합니다.");
-			} else if(age >= 6) {
-				System.out.println("보호자 동반 시 탑승이 가능합니다.");
-			} else {
-				System.out.println("나이가 6세 미만입니다.");
-				System.out.println("놀이기구 탑승이 불가능합니다.");
-			}
-			
-		} else {
-			System.out.println("키가 140cm 미만입니다.");
-			System.out.println("놀이기구 탑승이 불가능합니다.");
-		}
-		
-		
-		sc.close();
-		
+ Scanner sc = new Scanner(System.in);
 
+		System.out.println("성별을 입력하세요.(M/F)");
+		String gender = sc. next();
+
+		switch (gender){// 정수 또는 문자열만 가능함.
+		// Java 14버전 개선된 switch
+			case "m":
+			case "M":
+				System.out.println("남성입니다.");
+				break;// 해당케이스만 실행ㅎ하고 switch문을 종료해라!
+			          // switch문에서는 break 없이는 순서대로 모두 실행시키는 특성이 있음.
+
+			case "f" : case "F" :
+				System.out.println("여성입니다.");
+				break;
+
+			default: // case를 설정하지 않은 값들은 모두 default로 빠집니다.
+				System.out.println("잘못된 입력입니다!");
+		}
 	}
 
 }
