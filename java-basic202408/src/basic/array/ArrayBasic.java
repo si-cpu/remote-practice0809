@@ -7,7 +7,7 @@ public class ArrayBasic {
 	public static void main(String[] args) {
 
 		// 배열의 특징
-		// 1. 동종 모음 구조: 같은 데이터 타입 만을 가질수있다.
+		// 1. 동종 모음 구조: 같은 데이터 타입끼리만 배열에 담을 수 있다.
 		// 2. 크기가 불변임 : 크기를 동적으로 늘이거나 줄일 수 없다.
 
 		// 배열의 생성 순서
@@ -73,22 +73,6 @@ public class ArrayBasic {
 		System.out.println(Arrays.toString(dArr));
 		System.out.println(Arrays.toString(blArr));
 		System.out.println(Arrays.toString(sArr));
-
-
-		String[] week = {"월", "화", "수", "목", "금", "토", "일"};
-
-		/*
-			for(int i=0; i<week.length; i++) {
-			System.out.println(week[i] + "요일 좋아~!");
-			}
-		*/
-
-		for(String day : week) {
-			System.out.println(day + "요일 좋아~");
-		}
-
-
-
 
 
 
