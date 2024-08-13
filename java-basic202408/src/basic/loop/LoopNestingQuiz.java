@@ -21,9 +21,7 @@ public class LoopNestingQuiz {
         for (int i=1; i<=num; i++){
             int cnt = 0;// 소수판별을 위해 나누어 떨어진 횟수를 세줄 변수이자 반복문 내부에 선언을 해서 i++이 될때마다 0으로 초기화 해야함.
             for (int j = 1; j<=i; j++){
-                if (i%j ==0){
-                    cnt++;
-                }
+                if (i%j ==0) cnt++;
             }
             if (cnt == 2){
                 System.out.print(i + " ");
