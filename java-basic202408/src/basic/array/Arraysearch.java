@@ -1,5 +1,6 @@
 package basic.array;
 
+import javax.xml.transform.Source;
 import java.util.Scanner;
 
 public class Arraysearch {
@@ -27,13 +28,21 @@ public class Arraysearch {
              [비교문자열1.equals(비교문자열2)] 를 사용하여
              진행해야 합니다.
              */
+        boolean flag = false; // 불린 매력적인 방법이다. 하나의 스위치를 만들고 싶을 때 사용하자 무조건
 
         for (int i = 0; i < foods.length; i++) {
-            if (name.equals(foods[i])){//문자열 비교에서 ==는 사용이 불가하다. 따라서 equals 함수를 이용해서 비교해야 한다, equals 함수는 boolen값으로 주기 때문에 !는 사용가능하다.
+            if (name.equals(foods[i])) {//문자열 비교에서 ==는 사용이 불가하다. 따라서 equals 함수를 이용해서 비교해야 한다, equals 함수는 boolen값으로 주기 때문에 !는 사용가능하다.
                 System.out.println("탐색완료!");
                 System.out.println("인덱스 = " + i + "번");
+                flag = true;
                 break;
+/*            } else if (i == foods.length-1) {
+                System.out.println("없는음식입니다.");*/
+
             }
+        }
+        if (!flag){
+            System.out.println("없는음식입니다.");
         }
     }
 }
