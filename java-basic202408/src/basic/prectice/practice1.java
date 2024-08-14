@@ -1,6 +1,4 @@
-package prectice;
-
-import basic.loop.WhileExample1;
+package basic.prectice;
 
 import java.util.Scanner;
 
