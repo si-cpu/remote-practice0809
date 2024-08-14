@@ -2,7 +2,7 @@ package oop.fieldlocal;
 
 public class FieldAndLocal {
 
-    // 필emsms값을 초기화 하지 않아도
+    // 필드값을 초기화 하지 않아도
     // 객체 생성 시 각 타입의 기본값으로 자동 초기화됨.
     int aaa;
 
