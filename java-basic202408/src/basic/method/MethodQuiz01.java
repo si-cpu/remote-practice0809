@@ -1,3 +1,4 @@
+/*
 package basic.method;
 
 import java.util.Arrays;
@@ -79,3 +80,4 @@ public class MethodQuiz01 {
 
 
 
+*/

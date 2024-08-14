@@ -1,6 +1,5 @@
 package basic.loop;
 
-import oop.static_.field.Count;
 
 public class WhileExample2 {
 

@@ -1,7 +1,5 @@
 package basic.method;
 
-import etc.inner.Calculator;
-
 /*
 # 매개 변수 (parameter, argument)
 
