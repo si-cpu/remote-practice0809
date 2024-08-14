@@ -1,38 +1,74 @@
 package basic.method;
 
+import java.util.Arrays;
+
 public class MethodQuiz01 {
-	
-	static int calcDivisor(int num) {
-		int count = 0;
-		System.out.print("약수: ");
-		for(int i=1; i<=num; i++) {
-			if(num % i == 0) {
-				System.out.print(i + " ");
-				count++;
+
+	static String[] foods = {"chicken", "pasta", "beef", "fork"};
+
+	// 배열 내부 한눈에 보기
+	static void printFoods() {
+		System.out.println(Arrays.toString(foods));
+	}
+
+	// 특정요소가 배열에 포함되어 있는지 확인
+	static boolean isInclude(String searchTarget) {
+//		int idx = indexOf(searchTarget);
+//		if(idx == -1) return false;
+//		else return true;
+		return indexOf(searchTarget) != -1;
+	}
+
+	// foods 배열에서 특정 데이터의 인덱스를 반환
+	static int indexOf(String searchFood){
+		for (int i = 0; i < foods.length; i++) {
+			if (searchFood.equals(foods[i])){
+				return i;
 			}
 		}
-		System.out.println();
-		return count;
+		return -1;
 	}
+
+	// foods 배열에 데이터를 끝에 추가하는 함수
+	static void push(String newFood){
+		String[] temp = makeNewArray();
+		String[] temp = copy(size : 1);
+		temp[temp.length-1]=newFood;
+		foods = temp;
+	}
+
+	// 푸쉬 인터뷰
+	 static String[] copy(int size) {
+		String[] temp = makeNewArray(size);
+		int loopCount = (size >= 0) ? foods.length : temp.length;
+		for (int i = 0; i < foods.length; i++) {
+			temp[i]=foods[i];
+		}// 추출: 드래그후  ctrl + alt + M
+		return temp;
+
+		static void pop(){
+		String[] tmp = copy(size:1);
+		}
+	}
+
+
+
+
+
 
 	public static void main(String[] args) {
-		
-		/*
-		 1. calcDivisor()라는 메서드를 선언하세요.
-		 2. 이 메서드는 정수 하나를 전달받아서 해당 정수의
-		  모든 약수를 가로로 출력하고 약수의 개수를 리턴하는
-		  메서드입니다. (가로로 출력은 메서드 내부에서 진행)
-		 3. 메서드 선언을 완료하시고, main에서
-		  72의 약수의 개수와 10의 약수의 개수를 출력해 보세요.
-		  호출 두번 하시는 거에요.
-		 */
-		
-		System.out.println("72의 약수의 개수: " + calcDivisor(72));
-		System.out.println("10의 약수의 개수: " + calcDivisor(10));
 
-	}
+
+		printFoods();
+		if (isInclude("bread")){
+			System.out.println("존재함!");
+		}else{
+			System.out.println("존재하지 않음!");
+		}
+
 
 }
+
 
 
 
