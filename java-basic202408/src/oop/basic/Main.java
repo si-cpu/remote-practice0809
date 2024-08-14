@@ -9,6 +9,7 @@ public class Main {
         반드시 실체(객체)를 생성해야 합니다.
         클래스만 제작된 채로는 아무 기능도 수행할 수 없습니다.
          */
+
         Pen redpen = new Pen();
         Pen bluepen= new Pen();
 
