@@ -12,8 +12,19 @@ public class Earth {
 
     */
 
+
     static final double RADIUS = 6400.0; // 상수를 선언하는 것에 대한 것은 대문자로 쓰는 것이 관례이다.
 
-    static final double SURFACE_AREA = 2313 ;
+    static final double SURFACE_AREA ;
 
+    static{
+        // 정적 초기화자(static intializer)
+        // 정적 변수 등을 자동으로 초기화 해주는 static 블록입니다.
+        // 정적 초기화자는 내가 호출하는 것이 아니라, 클래스가 로딩되면 호출됩니다.
+        // 클래스 로딩이란, 클래스의 이름으로 static 멤버를 호출 또는 참조하거나
+        // 객체가 생성되면 로딩됩니다.
+        // 정적 초기환자는 클래스 로딩 시 최초 1회만 호출됩니다.
+
+        SURFACE_AREA = 4 * Math.PI * Math.pow(RADIUS,2);
+    }
 }
