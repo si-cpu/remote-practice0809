@@ -8,6 +8,5 @@
     <mapping directory="$PROJECT_DIR$/patronus" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/shopping" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/si" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/todo-api202405" vcs="Git" />
   </component>
 </project>
