@@ -6,7 +6,6 @@ public class main {
         Warrior w1 = new Warrior();
         w1.nickName = "전사 짱짱맨";
         w1.rage = 100;
-
         w1.showStatus();
 
     }
